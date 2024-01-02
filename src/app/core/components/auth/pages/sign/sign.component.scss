@@ -1,1 +1,48 @@
- @import url("../../../../../scss/layout/_container.scss");
+@import url("../../../../../scss/layout/_container.scss");
+@import url("../../../../../scss/base/variables.scss");
+@import url("../.././../../../scss/layout/btn.scss");
+ 
+
+:host{
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    &, label, input{
+        width: 100%;
+
+                   }
+
+        label{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            border-bottom: 1px solid #4a4a4a;
+
+        }         
+        
+        svg{
+            
+            margin-top: 15px;
+            width: 30px;
+        }
+
+        input{
+            height: 50px;
+            border: none;
+            font-size: 18px;
+            &::placeholder{
+                color: #4a4a4a;
+            }
+            
+
+        }
+  
+          
+  
+        }
+
+}
