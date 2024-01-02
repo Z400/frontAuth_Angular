@@ -33,7 +33,7 @@
 
      </form>
  
-     <span class="msg-error">Usuario ou senha incorreto!</span>
+     <span class="msg-error" *ngIf="messageError">{{messageError}}</span>
 
 
 
