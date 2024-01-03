@@ -15,7 +15,7 @@ export class SignComponent implements OnInit {
 
  public formAuth: FormGroup = this.formBuilder.group({
   email: ['', [Validators.required, Validators.email]],
-  password: ['', [Validators.required]]
+  password: ['', [Validators.required]],
  })
   
  public submitForm () {
@@ -28,6 +28,8 @@ export class SignComponent implements OnInit {
     error: (e) => (this.messageError = e),
    });
   }
+
+   
 
  }
 
